@@ -34,9 +34,17 @@ After some discussion, we decided that we wanted to build an app that would gath
 
 [<br>]: #
 
-We used 2 APIs:
+As per the brief, the solution was implemented using React and Next.js.  It is primarily designed to be viewed on a small screen such as a mobile device.
+
+The app extracts data from 2 APIs.  One provides the information on the planetary bodies such as the size and distance of the planets and information about the plante's moons (if any).  The other provides information on who is currently in space and where they are.  We supplemented this with further information such as a narrative descriptioned for each planet, held in a locally created JSON file.
+
+The 2 APIs used were:
 - [Solar System Open Data](https://api.le-systeme-solaire.net), which provides all of the data on the planetary bodies
 - [Open Notify](http://open-notify.org/), which provides the data on who is currently in space
+
+You can find a link to the deployed site above or at the right-side of this page.
+
+I intend to work further on this project to introduce Tailwind CSS and TypeScript for some further practice in those technologies.
 
 [Back to top](#explore-solar-system-project)
 
@@ -56,7 +64,9 @@ We all learned a lot about the advantages of Next.js vs React.  At a high level,
 - data caching was simpler in Next.js than in React - there was a single fetch from the Solar System Open Data api which was cached.  This improved performance considerably.
 - server side rendering, improving the initial load time of the pages
 
-One unexpected learning was how much trouble the Solar System Open Data api caused.  This is a French api and as a consequence, they keys are in French - so they include special characters (e.g. Vénus) and spaces (La Terre).  This caused issues when passing the keys around (we found that special characters and spaces were often dropped) and with key matching (matching French keys against English).  This created an inordinate amount of debugging time and with hindsight I think we could have found a better way of approaching it.
+One unexpected learning was how much trouble the Solar System Open Data api caused.  This is a French api and as a consequence, the keys are in French - so they include special characters (e.g. Vénus) and spaces (La Terre).  This caused issues when passing the keys around (we found that special characters and spaces were often dropped) and with key matching (matching French keys against English).  This created an inordinate amount of debugging time and with hindsight I think we could have found a better way of approaching it.
+
+Overall I really enjoyed working with React and Next.js and I intend to focus a good amount of effort in furthering my knowledge of these two technologies.
 
 [Back to top](#explore-solar-system-project)
 
