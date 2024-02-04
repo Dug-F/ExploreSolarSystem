@@ -1,4 +1,4 @@
-#Explore Solar System Project
+# Explore Solar System Project
 
 ## Contents
 1. [Problem](#problem)
@@ -34,13 +34,29 @@ After some discussion, we decided that we wanted to build an app that would gath
 
 [<br>]: #
 
+We used 2 APIs:
+- [Solar System Open Data](https://api.le-systeme-solaire.net), which provides all of the data on the planetary bodies
+- [Open Notify](http://open-notify.org/), which provides the data on who is currently in space
+
 [Back to top](#explore-solar-system-project)
 
 ## How To Use The App
 
+When the initial screen is loaded, click on any of the planets to show a detail page for that planet, which includes information such as the size and distance as well as lots of information about the planet's moons (if any).  Alternatively, use tab to navigate around and to show the detail screen for the planet.  At the bottom of the initial screen, you can see information about how many people are in space right now, what their names are and where they are.
+
 [Back to top](#explore-solar-system-project)
 
 ## What I Learned
+
+Number one is that it is amazing how quickly you can become functional at a basic level with a completely new language/framework in a very short period of time.  This is a key area where teamwork comes into play as the learning tasks can be subdivided so that whilst any one team member may not have the full picture, as a team we were able to construct an MVP.
+
+We all learned a lot about the advantages of Next.js vs React.  At a high level, these were:
+- file-based routing system.
+  - this made it easy to construct a common function to show the planet details, using only the query parameters passed.  This took some while to figure out, but speed up development considerably, not only avoiding having to write multiple funtions but also in not having to debug multiple functions.
+- data caching was simpler in Next.js than in React - there was a single fetch from the Solar System Open Data api which was cached.  This improved performance considerably.
+- server side rendering, improving the initial load time of the pages
+
+One unexpected learning was how much trouble the Solar System Open Data api caused.  This is a French api and as a consequence, they keys are in French - so they include special characters (e.g. Vénus) and spaces (La Terre).  This caused issues when passing the keys around (we found that special characters and spaces were often dropped) and with key matching (matching French keys against English).  This created an inordinate amount of debugging time and with hindsight I think we could have found a better way of approaching it.
 
 [Back to top](#explore-solar-system-project)
 
