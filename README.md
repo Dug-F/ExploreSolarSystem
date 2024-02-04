@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#Explore Solar System Project
 
-## Getting Started
+## Contents
+1. [Problem](#problem)
+2. [Solution](#solution)
+3. [How To Use The App](#how-to-use-the-app)
+4. [What I Learned](#what-i-learned)
+5. [Tech Stack](#tech-stack)
+6. [How To Run Locally](#how-to-run-locally)
 
-First, run the development server:
+## Problem
+
+This was given as a hackathon at the School of Code.  We were divided into small groups and given a brief to build an MVP using React and Next.js.  Although we had been learning and using React for the previous week or so, Next.js was completely new to use and we had not had any tuition on it at all.  The idea was to simulate a real world environment to mirror the dynamic nature of a developer's life.  All the activities (from conception to presentation) took place over a 2-day period.
+
+The objectives were to:
+- learn and apply Next.js to build a functional prototype
+- understand and demonstrate the benefits of Next.js over vanilla React
+- develop an app highlighting key Next.js features, like server-side rendering and file-based routing
+- deliver a functional MVP within the strict 2-day timeframe
+
+After some discussion, we decided that we wanted to build an app that would gather data about the solar system from an api or two and present the data in an educational format.  The interface would allow us to explore the file-based routing system in Next.js as we presented information about each planet.  We also wanted a fun interface where a user could click on an image of the planet to get further information.
+
+## Solution
+
+[Deployed here](https://explore-solar-system.vercel.app/)
+
+<h3>Watch a demo video</h3>
+
+[<a href="https://youtu.be/3vNU_khFKkU" title="Watch the video">]: #
+[    <img src="/public/HigherOrLowerDemoVideo.png" alt="Watch the video" width="500"/>]: #
+[</a>]: #
+
+[<br>]: #
+
+[<br>]: #
+
+[Back to top](#explore-solar-system-project)
+
+## How To Use The App
+
+[Back to top](#explore-solar-system-project)
+
+## What I Learned
+
+[Back to top](#explore-solar-system-project)
+
+## Tech Stack
+
+React, Javascript, Next.js
+
+## How To Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/Dug-F/ExploreSolarSystem.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+  cd ExploreSolarSystem
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Install dependencies
 
-## Learn More
+```bash
+  npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Click on the link shown to invoke the app in your browser
 
-## Deploy on Vercel
+<hr>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Back to top](#explore-solar-system-project)
