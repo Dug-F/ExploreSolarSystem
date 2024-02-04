@@ -16,6 +16,10 @@
   }
 }
 
+.hotspot {
+  @apply bg-transparent cursor-pointer hover:shadow-highlight focus:shadow-highlight transition duration-300 ease-in-out
+}
+
 body {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -23,14 +27,14 @@ body {
   margin-bottom: 50px;
 }
 
-.mainImage{
+.mainImage {
   width: 80%;
   max-width: 1000px;
   margin: auto;
   margin-top: 5rem;
 }
 
-.astronaut-count{
+.astronaut-count {
   color: white;
   font-size: 2rem;
   text-align: center;
@@ -49,7 +53,6 @@ h1 {
   font-size: 2rem;
   text-align: center;
   margin: 30px auto;
-
 }
 
 h2 {

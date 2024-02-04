@@ -1,9 +1,9 @@
-'use client';
+"use client";
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { startResizeHandler, stopResizeHandler } from "./resizeHandler";
 
-const ResponsiveImageWithHotspots = ({hotspots, imageUrl}) => {
+const ResponsiveImageWithHotspots = ({ hotspots, imageUrl }) => {
   const router = useRouter();
 
   const [imageSize, setImageSize] = useState({ width: 0, height: 0 });
@@ -20,11 +20,11 @@ const ResponsiveImageWithHotspots = ({hotspots, imageUrl}) => {
     router.push(hotspot.link);
   };
 
-    return (
+  return (
     <div className="mainImage" style={{ position: "relative", overflow: "hidden" }}>
       <img id="hotspotImage" src={imageUrl} alt="Responsive Image" style={{ width: "100%", height: "auto" }} />
 
-      {hotspots.map((hotspot) => (
+      {hotspots.map((hotspot, index) => (
         <div
           key={hotspot.id}
           style={{
@@ -38,15 +38,7 @@ const ResponsiveImageWithHotspots = ({hotspots, imageUrl}) => {
           }}
           onClick={() => handleHotspotClick(hotspot)}
         >
-          <div
-            style={{
-              width: "100%",
-              height: "100%",
-              borderRadius: "50%",
-              background: "transparent",
-              cursor: "pointer",
-            }}
-          />
+          <button className="w-full h-full rounded-full hotspot" tabIndex="0" />
         </div>
       ))}
     </div>

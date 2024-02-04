@@ -4,7 +4,7 @@ import { fetchData } from "./planetDataCache";
 export default async function useMoons(planet) {
   const data = await fetchData();
 
-  let moons = [<h2>No Moons</h2>];
+  let moons = [<h2 key="no-moons">No Moons</h2>];
   if (data[planet].moons) {
     moons = data[planet].moons.map((moon) => {
       const name = data[moon.moon].englishName;
